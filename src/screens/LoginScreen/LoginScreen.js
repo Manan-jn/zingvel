@@ -18,12 +18,16 @@ const LoginScreen = () => {
         text1="Welcome Back"
         text2="Enter your Phone number to sign in"
       />
-      <PhoneInput
-        placeholder="Phone Number"
-        value={phoneNum}
-        setValue={setPhoneNum}
-      />
-      <CustomButton text="LOGIN" onPress={onSignInPressed} />
+      <View style={styles.phoneCont}>
+        <PhoneInput
+          placeholder="Phone Number"
+          value={phoneNum}
+          setValue={setPhoneNum}
+        />
+      </View>
+      <View style={styles.loginCont}>
+        <CustomButton text="LOGIN" onPress={onSignInPressed} />
+      </View>
       <View style={styles.lineContainer}>
         <View style={styles.line} />
         <View>
@@ -47,9 +51,17 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
   },
+  phoneCont: {
+    marginTop: 45,
+  },
+  loginCont: {
+    marginTop: 25,
+    marginBottom: 50,
+  },
   lineContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+    marginBottom: 40,
   },
   line: {
     height: 1,

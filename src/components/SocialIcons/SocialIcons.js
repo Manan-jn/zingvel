@@ -47,7 +47,6 @@ const SocialIcons = () => {
 const styles = StyleSheet.create({
   box: {
     display: 'flex',
-    marginTop: 65,
     flexDirection: 'row',
     justifyContent: 'center',
   },

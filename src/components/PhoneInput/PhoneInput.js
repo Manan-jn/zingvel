@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     width: 316,
     marginTop: 25,
     height: 47,
+    marginBottom: 20,
     flexDirection: 'row',
   },
   countryCode: {

@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     color: '#222222',
   },
   textSmall: {
-    fontFamily: 'Roboto-Bold',
+    fontFamily: 'Roboto-Regular',
     fontStyle: 'normal',
     fontWeight: '400',
     fontSize: 16,

@@ -67,6 +67,8 @@ const styles = StyleSheet.create({
   lineContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+    marginTop: 35,
+    marginBottom: 40,
   },
   line: {
     height: 1,
@@ -91,6 +93,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    marginBottom: 35,
   },
   checkbText: {
     color: 'black',

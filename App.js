@@ -7,12 +7,15 @@ import LoginScreen from './src/screens/LoginScreen';
 const App = () => {
   return (
     <SafeAreaView style={styles.root}>
-      {/* <Myheading
+      {/* THIS IS FOR REGISTER SCREEN */}
+      <Myheading
         text1="Create Account"
         text2="Enter your Name and Phone number to register"
       />
-      <SignInScreen /> */}
-      <LoginScreen />
+      <SignInScreen />
+
+      {/* THIS IS THE COMPONENT FOR LOGIN SCREEN */}
+      {/* <LoginScreen /> */}
     </SafeAreaView>
   );
 };
