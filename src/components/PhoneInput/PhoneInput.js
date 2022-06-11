@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   phoneNumber: {
     width: 316,
-    marginTop: 74,
+    marginTop: 25,
     height: 47,
     flexDirection: 'row',
   },

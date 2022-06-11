@@ -1,46 +1,29 @@
 /* eslint-disable prettier/prettier */
 import React, {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import CheckBox from '@react-native-community/checkbox';
-
-import CustomInput from '../../components/CustomInput';
+import Myheading from '../../components/Myheading';
 import PhoneInput from '../../components/PhoneInput';
+import CustomButton from '../../components/CustomButton';
 import SocialIcons from '../../components/SocialIcons';
 
-import CustomButton from '../../components/CustomButton';
-
-const SignInScreen = () => {
-  const [username, setUsername] = useState('');
-  const [toggleCheckBox, setToggleCheckBox] = useState(false);
+const LoginScreen = () => {
   const [phoneNum, setPhoneNum] = useState('');
-
   const onSignInPressed = () => {
     console.warn('Sign In');
   };
 
   return (
     <View style={styles.root}>
-      <CustomInput
-        placeholder="Full Name"
-        value={username}
-        setValue={setUsername}
+      <Myheading
+        text1="Welcome Back"
+        text2="Enter your Phone number to sign in"
       />
       <PhoneInput
         placeholder="Phone Number"
         value={phoneNum}
         setValue={setPhoneNum}
       />
-      <View style={styles.checkb}>
-        <CheckBox
-          disabled={false}
-          value={toggleCheckBox}
-          style={styles.box}
-          onValueChange={newValue => setToggleCheckBox(newValue)}
-        />
-        <Text style={styles.checkbText}>I agree </Text>
-        <Text style={styles.checkbLink}>Terms & Conditions</Text>
-      </View>
-      <CustomButton text="CREATE ACCOUNT" onPress={onSignInPressed} />
+      <CustomButton text="LOGIN" onPress={onSignInPressed} />
       <View style={styles.lineContainer}>
         <View style={styles.line} />
         <View>
@@ -50,8 +33,8 @@ const SignInScreen = () => {
       </View>
       <SocialIcons />
       <View style={styles.bottomText}>
-        <Text style={[styles.toRegister]}>Already have an account? </Text>
-        <Text style={styles.login}>Login</Text>
+        <Text style={[styles.toRegister]}>Don't have an account yet? </Text>
+        <Text style={styles.login}>Register</Text>
       </View>
     </View>
   );
@@ -133,4 +116,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SignInScreen;
+export default LoginScreen;
